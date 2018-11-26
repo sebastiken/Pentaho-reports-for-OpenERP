@@ -364,7 +364,7 @@ class report_prompt_class(models.TransientModel):
 
         doc = etree.fromstring(result['arch'])
 
-        selection_groups = doc.findall('.//group[@string="Selections"]')
+        selection_groups = doc.findall('.//group[@name="selections"]')
 
         first_parameter = {}
 
